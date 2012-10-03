@@ -41,7 +41,11 @@ caption {
     margin-bottom: 0.5em;
 }
 
-.l-page, .layout-LIBRARYBOOKS {
+.l-page, body {
+    background-color: #efefef;
+}
+
+.l-page, body {
     font-size: 14px;
     line-height: 17px;
     font-family: Helvetica, Arial, sans-serif;
@@ -165,7 +169,7 @@ caption {
     position: relative;
 
     /* !!! */
-    margin-right: 111px;
+    margin-right: 60px;
     /*-webkit-transform:scale(2.0);*/
     /*-webkit-transform:rotate(50deg);*/
 }
