@@ -1,0 +1,466 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, span, small, i, img, blockquote, table, tr, th, td, input, textarea, strong, dl, dt, dd {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body.l-page {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3c3c3c;
+    vertical-align: baseline;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+body.is_busy {
+    cursor: wait;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: normal;
+}
+
+dfn, i {
+    font-style: normal;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border: none;
+}
+
+caption {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+.l-page, .layout-LIBRARYBOOKS {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.l-layout {
+    width: 1010px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.l-header {
+    padding-top: 28px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.l-header.g-fixed {
+    position: fixed;
+}
+
+.l-header-caption {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #b2b2b2;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    padding-bottom: 15px;
+    margin: 0 6px;
+    background: no-repeat center bottom;
+}
+
+.l-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.l-copyright {
+    font-size: 11px;
+    color: #bebebe;
+}
+
+.w-books-list {
+    padding-left: 37px;
+}
+
+.w-books-list .w-book {
+    vertical-align: top;
+}
+
+.w-books-list-row {
+    background: no-repeat 100% 100%;
+    padding-bottom: 57px;
+    text-align: left;
+    position: relative;
+    padding-right: 47px;
+    /* !!! */
+    margin-top: 8em;
+    /* !!! */
+}
+
+.w-books-list-row:before, .w-books-list-row_after {
+    content: "";
+    display: block;
+    background: no-repeat 0 0;
+    width: 37px;
+    height: 56px;
+    bottom: 0;
+    position: absolute;
+}
+
+.w-books-list-row:before {
+    left: -37px;
+    float: left;
+}
+
+.w-books-list-row_after {
+    float: right;
+    left: auto;
+    right: -37px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.w-books-list-row-inner {
+    margin: 0 -8px;
+    z-index: 1;
+    position: relative;
+    text-align: justify;
+    font-size: 0;
+    line-height: 0;
+
+    white-space:nowrap;
+}
+
+.w-books-list-group-header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #d6d6d6;
+    text-shadow: 0 1px 0 #FFF;
+
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: -23px;
+}
+
+.w-books-list-item {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    height: 150px;
+    margin-top: 23px;
+    position: relative;
+
+    /* !!! */
+    margin-right: 111px;
+    /*-webkit-transform:scale(2.0);*/
+    /*-webkit-transform:rotate(50deg);*/
+}
+
+.w-books-list-row .w-books-list-item:last-child {
+    margin-right: 0;
+}
+
+.w-books-list-helper {
+    display: inline-block;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+}
+
+.w-book {
+    display: inline-block;
+    position: relative;
+}
+
+.w-book-cover-wrap {
+    display: block;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+
+.w-book-cover-hotzone {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: block;
+}
+
+body.g-debug .w-book-cover-hotzone:hover {
+    background-color: pink;
+    opacity: 0.8;
+}
+
+.w-book-cover-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: no-repeat 0 0;
+}
+
+.w-book.faq {
+    width: 110px;
+    height: 140px;
+}
+
+.w-books-list-item .w-book.faq {
+    margin-top: 22px;
+}
+
+.w-book.faq .w-book-cover-decor {
+    top: -2px;
+    left: -1px;
+    width: 151px;
+    height: 144px;
+}
+
+.w-book.guide {
+    width: 109px;
+    height: 150px;
+}
+
+.w-books-list-item .w-book.guide {
+    margin-top: 12px;
+}
+
+.w-book.guide .w-book-cover-decor {
+    top: -1px;
+    left: 0;
+    width: 122px;
+    height: 151px;
+}
+
+.w-book.cookbook {
+    width: 125px;
+    height: 126px;
+}
+
+.w-books-list-item .w-book.cookbook {
+    margin-top: 33px;
+}
+
+.w-book.cookbook .w-book-cover-decor {
+    top: -4px;
+    left: -2px;
+    width: 167px;
+    height: 132px;
+}
+
+.w-book.tutorial {
+    width: 110px;
+    height: 140px;
+}
+
+.w-books-list-item .w-book.tutorial {
+    margin-top: 22px;
+}
+
+.w-book.tutorial .w-book-cover-decor {
+    top: -2px;
+    left: -1px;
+    width: 151px;
+    height: 144px;
+}
+
+.w-book.benefits {
+    width: 109px;
+    height: 132px;
+}
+
+.w-books-list-item .w-book.benefits {
+    margin-top: 26px;
+}
+
+.w-book.benefits .w-book-cover-decor {
+    top: -1px;
+    left: -1px;
+    width: 122px;
+    height: 133px;
+}
+
+.w-book.getting-started {
+    width: 110px;
+    height: 140px;
+}
+
+.w-books-list-item .w-book.getting-started {
+    margin-top: 22px;
+}
+
+.w-book.getting-started .w-book-cover-decor {
+    top: -2px;
+    left: -1px;
+    width: 151px;
+    height: 144px;
+}
+
+.w-book.reference {
+    width: 57px;
+    height: 90px;
+}
+
+.w-books-list-item .w-book.reference {
+    margin-top: 70px;
+}
+
+.w-book.reference .w-book-cover-decor {
+    top: -4px;
+    left: -2px;
+    width: 92px;
+    height: 96px;
+}
+
+.w-book.introducing {
+    width: 82px;
+    height: 132px;
+}
+
+.w-books-list-item .w-book.introducing {
+    margin-top: 25px;
+}
+
+.w-book.introducing .w-book-cover-decor {
+    top: -1px;
+    left: -1px;
+    width: 122px;
+    height: 133px;
+}
+
+.w-book-group-name {
+    display: block;
+    font-size: 12px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.w-book-name {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.w-tooltip {
+    position: absolute;
+    z-index: 5000;
+    display: none;
+    background-color: #f5f5f5;
+    padding: 7px 10px;
+    border-style: solid;
+     border-color: #b2b2b2;
+    border-width: 1px 0;
+}
+
+.w-tooltip:after {
+    width: 10px;
+    height: 6px;
+    background: url("../images/slices.png") no-repeat 0 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    bottom: -6px;
+    display: block;
+    content: ""
+}
+
+.w-book .w-tooltip-wrap {
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    margin-top: 0;
+
+    opacity: 0;
+    display: none;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.w-book .w-tooltip {
+    position: relative;
+    font-size: 11px;
+    line-height: normal;
+    display: block;
+    min-width: 140px;
+    max-width: 170px;
+    right: -50%;
+    top: -10px;
+    text-align: left;
+}
+
+.w-book-cover-hotzone:hover + .w-tooltip-wrap {
+    opacity: 1;
+    display: block;
+}
+
+.l-header.g-fixed:after {
+    background-image: url('../images/header-shadow.png');
+}
+
+.l-header-caption {
+    background-image: url("../images/header-bg.png");
+}
+
+.w-books-list-row {
+    background-image: url("../images/shelf-right.png");
+}
+
+.w-books-list-row:before, .w-books-list-row_after {
+    background-image: url("../images/shelf-left-corner.png");
+}
+
+.w-book.faq .w-book-cover-decor {
+    background-image: url("../images/b-cover-faq.png");
+}
+
+.w-book.guide .w-book-cover-decor {
+    background-image: url("../images/b-cover-guide.png");
+}
+
+.w-book.cookbook .w-book-cover-decor {
+    background-image: url("../images/b-cover-cook.png");
+}
+
+.w-book.tutorial .w-book-cover-decor {
+    background-image: url("../images/b-cover-tutorial.png");
+}
+
+.w-book.benefits .w-book-cover-decor {
+    background-image: url("../images/b-cover-benefits.png");
+}
+
+.w-book.getting-started .w-book-cover-decor {
+    background-image: url("../images/b-cover-getting-started.png");
+}
+
+.w-book.reference .w-book-cover-decor {
+    background-image: url("../images/b-cover-reference.png");
+}
+
+.w-book.introducing .w-book-cover-decor {
+    background-image: url("../images/b-cover-introducing.png");
+}
+
+.w-tooltip:after {
+    background-image: url("../images/slices.png");
+}
+
+

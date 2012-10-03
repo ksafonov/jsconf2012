@@ -1,0 +1,95 @@
+.w-book.faq .w-book-cover-hotzone {
+    z-index: 1010;
+}
+
+.w-book.guide .w-book-cover-hotzone {
+    z-index: 1011;
+}
+
+.w-book.cookbook .w-book-cover-hotzone {
+    z-index: 1009;
+}
+
+.w-book.tutorial .w-book-cover-hotzone {
+    z-index: 1012;
+}
+
+.w-book.benefits .w-book-cover-hotzone {
+    z-index: 1005;
+}
+
+.w-book.getting-started .w-book-cover-hotzone {
+    z-index: 1013;
+}
+
+.w-book.reference .w-book-cover-hotzone {
+    z-index: 1006;
+}
+
+.w-book.introducing .w-book-cover-hotzone {
+    z-index: 1002;
+}
+
+.w-book.faq .w-book-cover-decor {
+    z-index: 100;
+}
+
+.w-book.guide .w-book-cover-decor {
+    z-index: 110;
+}
+
+.w-book.cookbook .w-book-cover-decor {
+    z-index: 90;
+}
+
+.w-book.tutorial .w-book-cover-decor {
+    z-index: 112;
+}
+
+.w-book.benefits .w-book-cover-decor {
+    z-index: 50;
+}
+
+.w-book.getting-started .w-book-cover-decor {
+    z-index: 113;
+}
+
+.w-book.reference .w-book-cover-decor {
+    z-index: 60;
+}
+
+.w-book.introducing .w-book-cover-decor {
+    z-index: 20;
+}
+
+.w-book.faq .w-book-cover-wrap {
+    z-index: 10;
+}
+
+.w-book.guide .w-book-cover-wrap {
+    z-index: 11;
+}
+
+.w-book.cookbook .w-book-cover-wrap {
+    z-index: 9;
+}
+
+.w-book.tutorial .w-book-cover-wrap {
+    z-index: 12;
+}
+
+.w-book.benefits .w-book-cover-wrap {
+    z-index: 5;
+}
+
+.w-book.getting-started .w-book-cover-wrap {
+    z-index: 13;
+}
+
+.w-book.reference .w-book-cover-wrap {
+    z-index: 6;
+}
+
+.w-book.introducing .w-book-cover-wrap {
+    z-index: 2;
+}
