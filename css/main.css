@@ -53,7 +53,8 @@ caption {
 }
 
 .l-layout {
-    width: 1010px;
+    max-width: 1010px;
+    min-width: 520px;
     text-align: left;
     margin: 0 auto;
 }
@@ -100,14 +101,15 @@ caption {
 }
 
 .w-books-list-row {
+    min-width: 520px;
+    margin-left:auto;
+    margin-right:auto;
     background: no-repeat 100% 100%;
     padding-bottom: 57px;
     text-align: left;
     position: relative;
     padding-right: 47px;
-    /* !!! */
-    margin-top: 8em;
-    /* !!! */
+    margin-top: 2em;
 }
 
 .w-books-list-row:before, .w-books-list-row_after {
@@ -157,7 +159,7 @@ caption {
     white-space: nowrap;
     position: absolute;
     left: 0;
-    top: -23px;
+    top: 0;
 }
 
 .w-books-list-item {
@@ -169,7 +171,6 @@ caption {
     margin-top: 23px;
     position: relative;
 
-    /* !!! */
     margin-right: 25px;
     /*-webkit-transform:scale(2.0);*/
     /*-webkit-transform:rotate(50deg);*/
